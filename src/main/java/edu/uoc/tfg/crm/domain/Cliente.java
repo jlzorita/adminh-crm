@@ -3,10 +3,7 @@ package edu.uoc.tfg.crm.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 
 @Getter
@@ -28,7 +25,9 @@ public class Cliente {
     private String iban;
     private String email;
     private String telefono;
+    @JsonIgnore
     private String usuario;
+
 
     @Builder.Default
     @JsonIgnore
@@ -38,19 +37,34 @@ public class Cliente {
     @JsonIgnore
     private Set<Notificacion> notificaciones = new HashSet<>();
 
-    protected static Map<String,String> sesiones = new HashMap<>();
 
-    public static String getSesion(String usuario){
+    protected static Map<String,String[]> sesiones = new HashMap<>();
+
+
+    public static String[] getSesion(String usuario){
         if(sesiones.containsKey(usuario))
             return sesiones.get(usuario);
         else return null;
     }
 
-    public static void addUsuario(String usuario, String sesion){
-        sesiones.put(usuario,sesion);
+    public static void addUsuario(String usuario, String value[]){
+        sesiones.put(usuario, value);
     }
     public static void removeUsuario(String usuario){
         if(sesiones.containsKey(usuario))
             sesiones.remove(usuario);
+    }
+    public static String comprobarNivelUsuario(String sesion){
+
+        String encontrado = null;
+        Iterator<String> it = sesiones.keySet().iterator();
+
+        while(it.hasNext()){
+            String clave = it.next();
+            String[] valor = sesiones.get(clave);
+            if(valor[0].equals(sesion)) encontrado = valor[1];
+        }
+
+        return encontrado;
     }
 }

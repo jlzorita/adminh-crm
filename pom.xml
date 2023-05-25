@@ -9,7 +9,7 @@
         <relativePath/>
     </parent>
     <groupId>edu.uoc.tfg</groupId>
-    <artifactId>user</artifactId>
+    <artifactId>crm</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>user</name>
     <description>ADMINH</description>

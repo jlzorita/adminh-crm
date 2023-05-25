@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode
+@EqualsAndHashCode(exclude={"mensajes","notificaciones"})
 @Builder
 @NoArgsConstructor
 @Table(name = "cliente")
@@ -59,12 +59,12 @@ public class ClienteEntity implements DomainTranslatable<Cliente> {
     @Column(name = "usuario")
     private String usuario;
 
-    @OneToMany(mappedBy="usuario")
+
+    @OneToMany(mappedBy="id")
     private Set<MensajeEntity> mensajes = new HashSet<>();
 
-    @OneToMany(mappedBy="usuario")
+    @OneToMany(mappedBy="id")
     private Set<NotificacionEntity> notificaciones = new HashSet<>();
-
 
 
     public static ClienteEntity fromDomain(Cliente cliente) {
@@ -106,8 +106,8 @@ public class ClienteEntity implements DomainTranslatable<Cliente> {
                 .email(this.getEmail())
                 .telefono(this.getTelefono())
                 .usuario(this.getUsuario())
-                .mensajes((this.getMensajes().stream().map(MensajeEntity::toDomain).collect(Collectors.toSet())))
-                .notificaciones((this.getNotificaciones().stream().map(NotificacionEntity::toDomain).collect(Collectors.toSet())))
+                //.mensajes((this.getMensajes().stream().map(MensajeEntity::toDomain).collect(Collectors.toSet())))
+                //.notificaciones((this.getNotificaciones().stream().map(NotificacionEntity::toDomain).collect(Collectors.toSet())))
                 .build();
     }
 }

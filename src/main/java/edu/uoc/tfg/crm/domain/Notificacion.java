@@ -2,6 +2,8 @@ package edu.uoc.tfg.crm.domain;
 
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
+
 @Getter
 @Setter
 @Builder
@@ -12,6 +14,6 @@ public class Notificacion {
     private Long id;
     private String mensaje;
     private Boolean leido;
-    private Cliente usuario;
+    private Cliente cliente;
 
 }

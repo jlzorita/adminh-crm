@@ -29,8 +29,8 @@ public class NotificacionEntity  implements DomainTranslatable<Notificacion> {
     private Boolean leido;
 
     @ManyToOne
-    @JoinColumn(name="usuario", referencedColumnName = "usuario")
-    private ClienteEntity usuario;
+    @JoinColumn(name="cliente_id", referencedColumnName = "id")
+    private ClienteEntity cliente;
 
 
     public static NotificacionEntity fromDomain(Notificacion notificacion) {
@@ -42,7 +42,7 @@ public class NotificacionEntity  implements DomainTranslatable<Notificacion> {
                 .id(notificacion.getId())
                 .mensaje(notificacion.getMensaje())
                 .leido(notificacion.getLeido())
-                .usuario(ClienteEntity.fromDomain(notificacion.getUsuario()))
+                .cliente(ClienteEntity.fromDomain(notificacion.getCliente()))
                 .build();
 
     }
@@ -52,7 +52,7 @@ public class NotificacionEntity  implements DomainTranslatable<Notificacion> {
                 .id(this.getId())
                 .mensaje(this.getMensaje())
                 .leido(this.getLeido())
-                .usuario(this.getUsuario().toDomain())
+                //.cliente(this.getCliente().toDomain()) QUITADO PARA QUE NO SE VEA CLIENTE EN GET
                 .build();
     }
 }

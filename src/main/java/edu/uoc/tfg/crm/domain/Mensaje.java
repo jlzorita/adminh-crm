@@ -2,6 +2,7 @@ package edu.uoc.tfg.crm.domain;
 
 import lombok.*;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 @Getter
@@ -19,8 +20,7 @@ public class Mensaje {
     private String respuesta;
     private Date fechaR;
     private Boolean leidoR;
-    private String propietario;
     private String administrador;
     private Long comunidadId;
-    private Cliente usuario;
+    private Cliente cliente;
 }

@@ -5,101 +5,70 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aeecb89f-f45b-4a88-bceb-a8915ae8947b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/ParSesion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/UsuarioApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaClassListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/request/ClienteRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/rest/ClienteRESTController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/FormaPago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Mensaje.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Notificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Tipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/repository/ClienteRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/ClienteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/DomainTranslatable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataClienteRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0823b81f1d8ef13b1b683077d7b204c4967533e8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/12aaee7f803036e112c765a2085d8830404cc06e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3d264e237eab39b79b6530b9a352ab69c1af31ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/41563f150b6ef5bf405a88fc93808ed0639a12db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/9/4992d64fb792eb8d75b3c244d936ec1d954947ef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/54fdbb101f445ebd14aa003c71a83481f8f0774c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5ce7ef3dd4a3068d72150343e9cfd47307dbb14e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/c/9c72ccb09273efd039773cf1ce7636a4573d1364" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/6/a65b3177097325a9613cbd6599beadea6bbd8436" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b9f601398598166fefff36463d4a257f767550f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/f/bfd280294c8bc6be9e4f113fcfd6b5439863b136" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/5/c5f7379221a6fae430d565dfcf180b280f3ab789" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/c/cc680094722f91375e91c747813e5fe87b8b6a9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/daaaccab93c6f6dbb48653e41f9a155befe137f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e87c040959334868e10706ba31da1d54698a2c26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/1/f1ef277ca0c14f0791c159899bf48c642f36c763" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/request/MensajeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/request/NotificacionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/request/RespuestaRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/request/UpdateClienteRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/repository/MensajeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/repository/NotificacionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataMensajeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataNotificacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d9f452aeb4c1f12f0a4edd1c60f45c9cced3c04" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/d/4d9f452aeb4c1f12f0a4edd1c60f45c9cced3c04" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a5631a525c17f6c4819aa58fbfda56e63e8ca6f" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/a/5a5631a525c17f6c4819aa58fbfda56e63e8ca6f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/81f7d3e673dfc8730ccec1fd6eef7f2ea495d4eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b902c4f0dc64e49fda5170f53a6828c8421f9fd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1902ec24eace3ecc3c57a986f7ecf37e562e318" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1902ec24eace3ecc3c57a986f7ecf37e562e318" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/0/8/0823b81f1d8ef13b1b683077d7b204c4967533e8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/1/2/12aaee7f803036e112c765a2085d8830404cc06e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/3/d/3d264e237eab39b79b6530b9a352ab69c1af31ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/1/41563f150b6ef5bf405a88fc93808ed0639a12db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/9/4992d64fb792eb8d75b3c244d936ec1d954947ef" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/4/54fdbb101f445ebd14aa003c71a83481f8f0774c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/5/c/5ce7ef3dd4a3068d72150343e9cfd47307dbb14e" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/c/9c72ccb09273efd039773cf1ce7636a4573d1364" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/a/6/a65b3177097325a9613cbd6599beadea6bbd8436" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b9f601398598166fefff36463d4a257f767550f8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/f/bfd280294c8bc6be9e4f113fcfd6b5439863b136" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/5/c5f7379221a6fae430d565dfcf180b280f3ab789" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/c/cc680094722f91375e91c747813e5fe87b8b6a9f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/d/a/daaaccab93c6f6dbb48653e41f9a155befe137f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/8/e87c040959334868e10706ba31da1d54698a2c26" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/f/1/f1ef277ca0c14f0791c159899bf48c642f36c763" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/1/81f7d3e673dfc8730ccec1fd6eef7f2ea495d4eb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/b/9/b902c4f0dc64e49fda5170f53a6828c8421f9fd1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/ParSesion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/UsuarioApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/application/kafka/KafkaClassListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/application/kafka/KafkaConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/application/kafka/KafkaConsumerConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/application/request/ClienteRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/application/rest/ClienteRESTController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/domain/Cliente.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/domain/repository/ClienteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/domain/service/ClienteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/domain/service/ClienteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/infrastructure/repository/jpa/ClienteEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/infrastructure/repository/jpa/ClienteRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/infrastructure/repository/jpa/DomainTranslatable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/user/infrastructure/repository/jpa/SpringDataClienteRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/CrmApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/CrmApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/ParSesion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/SesionData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaClassListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaClassListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConsumerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/rest/ClienteRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/application/rest/ClienteRESTController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Mensaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Mensaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Notificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/Notificacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/repository/ClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/repository/ClienteRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/CrmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/domain/service/CrmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataClienteRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataClienteRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/edu/uoc/tfg/user/UserApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/edu/uoc/tfg/crm/CrmApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/ParSesion.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/UsuarioApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/application/kafka/KafkaClassListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/application/kafka/KafkaConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/application/kafka/KafkaConsumerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/application/request/ClienteRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/application/rest/ClienteRESTController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/domain/Cliente$ClienteBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/domain/Cliente.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/domain/repository/ClienteRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/domain/service/ClienteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/domain/service/ClienteServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/infrastructure/repository/jpa/ClienteEntity$ClienteEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/infrastructure/repository/jpa/ClienteEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/infrastructure/repository/jpa/ClienteRepositoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/infrastructure/repository/jpa/DomainTranslatable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/user/infrastructure/repository/jpa/SpringDataClienteRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/ParSesion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/ParSesion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/UsuarioApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/kafka/KafkaClassListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/kafka/KafkaClassListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/kafka/KafkaConstants.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/kafka/KafkaConstants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/rest/ClienteRESTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/application/rest/ClienteRESTController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Cliente$ClienteBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Cliente$ClienteBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Mensaje$MensajeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Mensaje$MensajeBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Mensaje.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Mensaje.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Notificacion$NotificacionBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Notificacion$NotificacionBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Notificacion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/Notificacion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/repository/ClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/repository/ClienteRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/service/ClienteService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/domain/service/ClienteServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/ClienteRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity$MensajeEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity$MensajeEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/MensajeEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity$NotificacionEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity$NotificacionEntityBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/NotificacionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataClienteRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/uoc/tfg/crm/infrastructure/repository/jpa/SpringDataClienteRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/edu/uoc/tfg/user/UserApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/edu/uoc/tfg/user/UserApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +78,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -149,7 +119,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/IPCSD/epcsd-spring-showcatalog-solucio-main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PDS-DEF/cidh-ms-review&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -159,11 +129,11 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;sonarlint&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;ee11cbb19052e40b07aac0ca060c23ee&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;1fece0cb254f1f45891bc9ee9fed72a9&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Spring Boot.UsuarioApplication (1)">
+  <component name="RunManager" selected="Spring Boot.CrmApplication (1)">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="adminh-user" />
       <method v="2">
@@ -177,9 +147,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UsuarioApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="CrmApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="crm" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.uoc.tfg.crm.CrmApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrmApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <module name="user" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.uoc.tfg.crm.UsuarioApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.uoc.tfg.crm.CrmApplication" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="edu.uoc.tfg.crm.*" />
@@ -199,7 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.UsuarioApplication (1)" />
+        <item itemvalue="Spring Boot.CrmApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -242,7 +219,40 @@
       <workItem from="1682544188421" duration="347000" />
       <workItem from="1682623418687" duration="1748000" />
       <workItem from="1682694608557" duration="12769000" />
-      <workItem from="1682756217429" duration="1069000" />
+      <workItem from="1682756217429" duration="2898000" />
+      <workItem from="1682842628137" duration="9473000" />
+      <workItem from="1682874475735" duration="2657000" />
+      <workItem from="1682877827396" duration="3976000" />
+      <workItem from="1682889152266" duration="619000" />
+      <workItem from="1682931252427" duration="22078000" />
+      <workItem from="1683007474514" duration="1963000" />
+      <workItem from="1683047774255" duration="5015000" />
+      <workItem from="1683137487030" duration="2371000" />
+      <workItem from="1683221955511" duration="601000" />
+      <workItem from="1683234892167" duration="9000" />
+      <workItem from="1683360522671" duration="1200000" />
+      <workItem from="1683657209333" duration="833000" />
+      <workItem from="1683739157562" duration="3108000" />
+      <workItem from="1683786942848" duration="613000" />
+      <workItem from="1683833335674" duration="162000" />
+      <workItem from="1683833634622" duration="2176000" />
+      <workItem from="1683921324146" duration="29000" />
+      <workItem from="1683989196854" duration="6073000" />
+      <workItem from="1684051382815" duration="1730000" />
+      <workItem from="1684078702908" duration="601000" />
+      <workItem from="1684084719339" duration="1844000" />
+      <workItem from="1684088158383" duration="20000" />
+      <workItem from="1684356987519" duration="1376000" />
+      <workItem from="1684520521282" duration="1285000" />
+      <workItem from="1684522745731" duration="1625000" />
+      <workItem from="1684529064861" duration="1776000" />
+      <workItem from="1684574116217" duration="18283000" />
+      <workItem from="1684662491272" duration="1291000" />
+      <workItem from="1684869022527" duration="2613000" />
+      <workItem from="1684910246125" duration="606000" />
+      <workItem from="1684946404042" duration="54000" />
+      <workItem from="1684953130771" duration="3008000" />
+      <workItem from="1684963193029" duration="1779000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,7 @@ public class MensajeEntity implements DomainTranslatable<Mensaje> {
     @Column(name = "titulo", nullable = false)
     private String titulo;
 
-    @Column(name = "mensaje", nullable = false)
+    @Column(name = "mensaje", nullable = false, length = 1024)
     private String mensaje;
 
     @Column(name = "fecham", nullable = false)
@@ -34,7 +34,7 @@ public class MensajeEntity implements DomainTranslatable<Mensaje> {
     @Column(name = "leidom", nullable = false)
     private Boolean leidom;
 
-    @Column(name = "respuesta")
+    @Column(name = "respuesta", length = 1024)
     private String respuesta;
 
     @Column(name = "fechar")
@@ -44,8 +44,8 @@ public class MensajeEntity implements DomainTranslatable<Mensaje> {
     private Boolean leidor;
 
     @ManyToOne
-    @JoinColumn(name="usuario", referencedColumnName = "usuario")
-    private ClienteEntity usuario;
+    @JoinColumn(name="cliente_id", referencedColumnName = "id")
+    private ClienteEntity cliente;
 
     @Column(name = "administrador", nullable = false)
     private String administrador;
@@ -66,7 +66,7 @@ public class MensajeEntity implements DomainTranslatable<Mensaje> {
                 .respuesta(mensaje.getRespuesta())
                 .fechar(mensaje.getFechaR())
                 .leidor(mensaje.getLeidoR())
-                .usuario(ClienteEntity.fromDomain(mensaje.getUsuario()))
+                .cliente(ClienteEntity.fromDomain(mensaje.getCliente()))
                 .administrador(mensaje.getAdministrador())
                 .comunidadId(mensaje.getComunidadId())
                 .build();
@@ -83,7 +83,7 @@ public class MensajeEntity implements DomainTranslatable<Mensaje> {
                 .respuesta(this.getRespuesta())
                 .fechaR(this.getFechar())
                 .leidoR(this.getLeidor())
-                .usuario(this.getUsuario().toDomain())
+                .cliente(this.getCliente().toDomain())
                 .administrador(this.getAdministrador())
                 .comunidadId(this.getComunidadId())
                 .build();
