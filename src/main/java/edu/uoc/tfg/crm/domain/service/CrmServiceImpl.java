@@ -29,12 +29,16 @@ public class CrmServiceImpl implements CrmService {
     private final MensajeRepository mensajeRepository;
     private final NotificacionRepository notificacionRepository;
 
+
+    /*
     @Override
     public void setSession(SesionData sesion) {
         Cliente.removeUsuario(sesion.getUsuario());
         if(sesion.isAlta())
             Cliente.addUsuario(sesion.getUsuario(),sesion.getSesion());
     }
+    */
+
     @Override
     public Optional<Cliente> buscaClientePorUsuario(String usuario) {
         return clienteRepository.buscaClientePorUsuario(usuario);

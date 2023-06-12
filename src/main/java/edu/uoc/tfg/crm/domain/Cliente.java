@@ -1,6 +1,7 @@
 package edu.uoc.tfg.crm.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import edu.uoc.tfg.crm.SesionData;
 import lombok.*;
 
 import java.util.*;
@@ -45,6 +46,12 @@ public class Cliente {
         if(sesiones.containsKey(usuario))
             return sesiones.get(usuario);
         else return null;
+    }
+
+    public static void setSesion(SesionData sesion) {
+        removeUsuario(sesion.getUsuario());
+        if(sesion.isAlta())
+            addUsuario(sesion.getUsuario(),sesion.getSesion());
     }
 
     public static void addUsuario(String usuario, String value[]){

@@ -15,7 +15,7 @@ import java.util.Optional;
 
 public interface CrmService {
 
-    void setSession(SesionData sesion);
+    //void setSession(SesionData sesion);
 
     Boolean modificarDatosCliente(UpdateClienteRequest clienteRequest);
     Boolean enviarMensaje(MensajeRequest mensajeRequest);
