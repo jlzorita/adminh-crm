@@ -33,12 +33,8 @@ Fsrc/main/java/edu/uoc/tfg/crm/domain/repository/ClienteRepository.java,9\2\928
 Ksrc/main/java/edu/uoc/tfg/crm/domain/repository/NotificacionRepository.java,9\f\9f9dfc4bd79ed8d5bfb59a2c1c5043f0058a2c5e
 p
 @src/main/java/edu/uoc/tfg/crm/domain/service/CrmServiceImpl.java,3\1\312e840214598422b3ec10fe629339f64f741f04
-a
-1src/main/java/edu/uoc/tfg/crm/domain/Cliente.java,c\b\cb90fcd3c71c0eb3e20b777c78ae3b8157e3e6e1
 c
 3src/main/java/edu/uoc/tfg/crm/domain/FormaPago.java,8\d\8d7c250fdfe58da51dbf4c44633c125b04f0531a
-f
-6src/main/java/edu/uoc/tfg/crm/domain/Notificacion.java,4\d\4d9f452aeb4c1f12f0a4edd1c60f45c9cced3c04
 x
 Hsrc/main/java/edu/uoc/tfg/crm/application/kafka/KafkaConsumerConfig.java,b\0\b01f1e4ecfc5996fd15f6c2987b14216bc84c937
 s

@@ -26,18 +26,21 @@ import java.util.Optional;
 @CrossOrigin
 @RestController
 public class ClienteRESTController {
-
     private final CrmService crmService;
 
     @GetMapping("/user/sesion/{usuario}")
     @ResponseStatus(HttpStatus.OK)
     public String[] getClienteSesion(@PathVariable String usuario) {
+        log.trace("getClienteSesion");
         return Cliente.getSesion(usuario);
     }
+
 
     @GetMapping("/usuario/{usuario}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Cliente> getClienteByUsuario(@PathVariable String usuario, @RequestParam String sesion) {
+
+        log.trace("getClienteByUsuario");
         //Usuario tiene que ser el mismo
         if(!Cliente.getSesion(usuario)[0].equals(sesion)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         else {
@@ -49,6 +52,7 @@ public class ClienteRESTController {
     @PutMapping("/usuario/actualizar")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity actualizarUsuario(@RequestBody UpdateClienteRequest clienteRequest, @RequestParam String sesion) {
+        log.trace("actualizarUsuario");
         Optional<Cliente> cliente = crmService.buscaClientePorId(clienteRequest.getId());
         //Usuario tiene que ser el mismo
         if(!Cliente.getSesion(cliente.get().getUsuario())[0].equals(sesion)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -59,6 +63,7 @@ public class ClienteRESTController {
     @PostMapping("/mensaje")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity enviarMensaje(@RequestBody MensajeRequest mensajeRequest, @RequestParam String sesion) {
+        log.trace("enviarMensaje");
         Optional<Cliente> cliente = crmService.buscaClientePorId(mensajeRequest.getClienteId());
         //Usuario tiene que ser el mismo
         if(!Cliente.getSesion(cliente.get().getUsuario())[0].equals(sesion)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
@@ -69,6 +74,7 @@ public class ClienteRESTController {
     @DeleteMapping("/notificacion/eliminar/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity eliminarNotificacion(@PathVariable Long id,  @RequestParam String sesion) {
+        log.trace("eliminarNotificación");
         Long clienteId = crmService.buscaNotificacion(id).get().getCliente().getId();
         //Usuario tiene que ser el mismo
         Optional<Cliente> cliente = crmService.buscaClientePorId(clienteId);
@@ -80,6 +86,7 @@ public class ClienteRESTController {
     @PutMapping("/respuesta")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity responderMensaje(@RequestBody RespuestaRequest respuestaRequest, @RequestParam String sesion) {
+        log.trace("responderMensaje");
         //Solo puede responder usuario con rango administrador
         if(Cliente.comprobarNivelUsuario(sesion) == null || !Cliente.comprobarNivelUsuario(sesion).equals("2"))return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         if(crmService.responderMensaje(respuestaRequest)) return new ResponseEntity<>(HttpStatus.OK);
@@ -89,6 +96,7 @@ public class ClienteRESTController {
     @GetMapping("/mensaje/usuario/{usuario}") //Get Mensajes no respondidos por cliente
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Mensaje>> getMensajesByUsuario(@PathVariable String usuario, @RequestParam String tipo, @RequestParam String sesion) {
+        log.trace("getMensajesByUsuario");
         //Usuario tiene que ser el mismo
         if(!Cliente.getSesion(usuario)[0].equals(sesion)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         if(tipo.equals("NOLEIDO")) {
@@ -103,6 +111,7 @@ public class ClienteRESTController {
     @GetMapping("/mensaje/comunidad/{comunidad}") //Get Mensajes no respondidos por comunidad
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Mensaje>> getMensajesByComunidad(@PathVariable Long comunidad, @RequestParam String sesion) {
+        log.trace("getMensajesByComunidad");
         //Solo puede ver todos los mensajes de una comunidad usuario con rango administrador
         if(Cliente.comprobarNivelUsuario(sesion) == null || !Cliente.comprobarNivelUsuario(sesion).equals("2")) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         return ResponseEntity.ok().body(crmService.buscaMensajesNoLeidosPorComunidad(comunidad));
@@ -111,6 +120,7 @@ public class ClienteRESTController {
     @GetMapping("/cliente/id/{id}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Cliente> getClienteById(@PathVariable Long id, @RequestParam String sesion) {
+        log.trace("getClienteById");
         //Si el cliente es un proveedor cualquiera usuario logeado puede obtener los datos
         //Si el cliente es un vecino solo su usuario puede obtener sus datos
         Optional<Cliente> c = crmService.buscaClientePorId(id);
@@ -125,6 +135,7 @@ public class ClienteRESTController {
     @GetMapping("/proveedores/")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Cliente>> getProveedores(@RequestParam String sesion) {
+        log.trace("getProveedores");
         //Cualquier usuario logeado puede ver la lista de proveedores
         if(Cliente.comprobarNivelUsuario(sesion).equals(null)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         else return ResponseEntity.ok().body(crmService.buscaProveedores());
@@ -133,6 +144,7 @@ public class ClienteRESTController {
     @GetMapping("/notificacion/{usuario}")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<List<Notificacion>> getNotificacionesByCliente(@PathVariable String usuario, @RequestParam String sesion) {
+        log.trace("getNotificacionesByCliente");
         //Solo el usuario de un cliente puede ver sus notificaciones
         if(!Cliente.getSesion(usuario)[0].equals(sesion)) return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
         return ResponseEntity.ok().body(crmService.buscaNotificacionesPorUsuario(usuario));
@@ -141,6 +153,7 @@ public class ClienteRESTController {
     @PostMapping("/notificacion/crear/")
     @ResponseStatus(HttpStatus.OK)
     public ResponseEntity crearNotificacion(@RequestBody NotificacionRequest notificacionRequest, @RequestParam String sesion) {
+        log.trace("crearNotificación");
         //Solo un administrador puede crear notificaciones
         if(Cliente.comprobarNivelUsuario(sesion)== null || !Cliente.comprobarNivelUsuario(sesion).equals("2"))
             return new ResponseEntity<>(HttpStatus.UNAUTHORIZED);
